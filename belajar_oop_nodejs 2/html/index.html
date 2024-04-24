@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <title>HALLO</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">MyBookList</h1>
+        <form id="book-form">
+            <div class="form-group">
+                <label for="judul">Judul</label>
+                <input type="text" id="judul" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="kategori">Kategori</label>
+                <input type="text" id="kategori" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="penerbit">Penerbit</label>
+                <input type="text" id="penerbit" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="jmlHalaman">Jumlah Halaman</label>
+                <input type="text" id="jmlHalaman" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="isbn">ISBN</label>
+                <input type="text" id="isbn" class="form-control">
+            </div>
+            <input type="submit" value="Tambah Buku" class="btn btn-primary btn-block">
+        </form>
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Judul</th>
+                    <th>Kategori</th>
+                    <th>Penerbit</th>
+                    <th>Jumlah Halaman</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+    <script src="../js/App.js"></script>
+</body>
+</html>
